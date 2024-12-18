@@ -6,14 +6,14 @@ import csv
 api_url = "https://api.themoviedb.org/3/movie/popular?language=en-US"
 
 # Tu api_key de la API de TMDB
-api_key = "cf814fec991793f0752ffd556a82be20"
+api_key = "poner tu api key"
 
 # Conexión a SQL Server
 conexion = pyodbc.connect('DRIVER={SQL Server};'
-                          'SERVER=DESKTOP-7AGUG97;'
+                          'SERVER=poner nombre del servidor;'
                           'DATABASE=TMDB;'
                           'UID=santiago;'
-                          'PWD=123')
+                          'PWD=contraseña')
 cursor = conexion.cursor()
 
 # Función para determinar la categoría de popularidad
